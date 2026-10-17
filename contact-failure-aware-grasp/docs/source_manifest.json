@@ -1,0 +1,16 @@
+[
+  {
+    "filename": "手稿.docx",
+    "sha256": "c9503d6486e9dc78327fe8fbee7939157d6e4c5f9a2621c66b11ac588caec8fc",
+    "paragraph_blocks": 128,
+    "body_text_unchanged": true,
+    "diff_characters": 0
+  },
+  {
+    "filename": "补充文件.docx",
+    "sha256": "595b77ea02978cc284662320e9b391a01f09b96b9f85186b6e191a28ad710c24",
+    "paragraph_blocks": 13,
+    "body_text_unchanged": false,
+    "diff_characters": 3508
+  }
+]

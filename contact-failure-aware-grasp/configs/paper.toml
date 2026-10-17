@@ -1,0 +1,56 @@
+# Values explicitly reported in the manuscript and supplementary Tables S1-S4.
+# The feature layout, MLP internals and seed VALUES are documented implementation choices.
+[network]
+point_dim = 3
+finger_dim = 35
+diagnostic_dim = 12
+context_dim = 23
+dim = 128
+heads = 4
+blocks = 2
+interaction = true
+dropout = 0.0
+ffn_multiplier = 4
+bias_hidden_dim = 32
+
+[training]
+batch_size = 4
+epochs = 100
+patience = 15
+lr = 0.0003
+weight_decay = 0.0001
+lambda_d = 1.0
+lambda_pair = 0.5
+temperature = 0.1
+seeds = [0, 1, 2]
+device = "auto"
+num_workers = 0
+gradient_clip = 0.0
+
+[utility]
+alpha = 1.0
+beta = 0.5
+gamma = 0.1
+
+[simulation]
+timestep = 0.004
+diagnosis_seconds = 0.2
+settle_seconds = 0.1
+validation_seconds = 2.0
+translation_threshold = 0.05
+rotation_threshold_deg = 15.0
+gravity = 9.81
+iterations = 50
+repeats = 5
+velocity_linear = 0.01
+velocity_angular = 0.05
+
+[online]
+budget_seconds = 5.0
+budgets = [2.0, 5.0, 10.0]
+
+[data]
+point_count = 1024
+actuator_perturbation_rad = 0.05
+palm_translation_m = 0.005
+palm_rotation_deg = 2.5

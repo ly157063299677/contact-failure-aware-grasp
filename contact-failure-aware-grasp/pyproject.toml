@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "contact-failure-aware-grasp"
+version = "0.1.0"
+description = "Reference code for contact-failure-aware finger-subset selection in dexterous grasp refinement"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = ["numpy>=1.26,<3"]
+
+[project.optional-dependencies]
+learn = ["torch==2.7.*"]
+physics = ["mujoco==3.3.3"]
+plots = ["matplotlib>=3.8,<4"]
+dev = []
+
+[tool.setuptools.packages.find]
+where = ["src"]
